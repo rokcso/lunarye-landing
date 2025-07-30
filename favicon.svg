@@ -2,26 +2,39 @@
      xmlns="http://www.w3.org/2000/svg">
   <style>
     :root {
-      --bg: #FEFEFE;
+      --bg: none;
       --fg: #333;
     }
+    .moon-light { display: block; }
+    .moon-dark { display: none; }
     @media (prefers-color-scheme: dark) {
       :root {
-        --bg: #222;
+        --bg: none;
         --fg: #EEE;
       }
+    .moon-light { display: none; }
+    .moon-dark { display: block; }
     }
   </style>
   <!-- 背景 -->
   <rect width="32" height="32" rx="6" fill="var(--bg)"/>
-  <!-- 大写 L -->
-  <text x="50%" y="50%"
+  <!-- 文字 icon -->
+  <text class="moon-icon moon-light"
+        x="50%" y="62%"
         dominant-baseline="middle"
         text-anchor="middle"
         font-family="SF Mono, -apple-system, BlinkMacSystemFont, sans-serif"
-        font-size="24"
-        font-weight="600"
+        font-size="32"
         fill="var(--fg)">
-    L
+    🌕
+  </text>
+  <text class="moon-icon moon-dark"
+        x="50%" y="62%"
+        dominant-baseline="middle"
+        text-anchor="middle"
+        font-family="SF Mono, -apple-system, BlinkMacSystemFont, sans-serif"
+        font-size="32"
+        fill="var(--fg)">
+    🌑
   </text>
 </svg>
