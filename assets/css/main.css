@@ -1,0 +1,98 @@
+:root {
+    --text-color: #333;
+    --bg-color: #fefefe;
+    --border-color: #ccc;
+    --link-color: #007bff;
+    --link-hover-color: #0056b3;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --text-color: #eee;
+        --bg-color: #222;
+        --border-color: #555;
+        --link-color: #8ab4f8;
+        --link-hover-color: #6a9ee8;
+    }
+}
+
+body {
+    font-family: 'SF Mono', 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', monospace;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+    padding: 40px;
+    border: 1px solid var(--border-color);
+    box-shadow: 4px 4px 0px var(--border-color);
+    background-color: var(--bg-color);
+    margin-bottom: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: var(--text-color);
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+.section-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    border-bottom: 1px dashed var(--border-color);
+    padding-bottom: 5px;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+    border-bottom: 1px dashed var(--link-color);
+    transition: all 0.2s ease-in-out;
+}
+
+a:hover {
+    color: var(--link-hover-color);
+    border-bottom-color: var(--link-hover-color);
+    background-color: rgba(0, 123, 255, 0.1);
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: var(--text-color);
+}
+
+.footer-links a {
+    margin: 0 10px;
+}

@@ -1,0 +1,27 @@
+<svg width="32" height="32" viewBox="0 0 32 32"
+     xmlns="http://www.w3.org/2000/svg">
+  <style>
+    :root {
+      --bg: #FEFEFE;
+      --fg: #333;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #222;
+        --fg: #EEE;
+      }
+    }
+  </style>
+  <!-- 背景 -->
+  <rect width="32" height="32" rx="6" fill="var(--bg)"/>
+  <!-- 大写 L -->
+  <text x="50%" y="50%"
+        dominant-baseline="middle"
+        text-anchor="middle"
+        font-family="SF Mono, -apple-system, BlinkMacSystemFont, sans-serif"
+        font-size="24"
+        font-weight="600"
+        fill="var(--fg)">
+    L
+  </text>
+</svg>
