@@ -1,0 +1,29 @@
+{
+  "products": [
+    {
+      "name": "Arclet Copier",
+      "description": "Quickly copy current page URL with parameter filtering and Markdown formatting support.",
+      "link": "https://github.com/rokcso/arclet-copier",
+      "icon": "🌈",
+      "icon_img": "assets/img/arclet-copier-icon.png"
+    },
+    {
+      "name": "MoonScript",
+      "description": "A lightweight markup language that transforms text into beautiful documents, perfect for writers and developers alike.",
+      "link": "#",
+      "icon": "📝"
+    },
+    {
+      "name": "Stellar",
+      "description": "An elegant design system that brings cosmic harmony to your digital products with carefully crafted components.",
+      "link": "#",
+      "icon": "⭐"
+    },
+    {
+      "name": "Eclipse",
+      "description": "A privacy-focused analytics platform that provides clear insights without compromising user data or experience.",
+      "link": "#",
+      "icon": ""
+    }
+  ]
+}
