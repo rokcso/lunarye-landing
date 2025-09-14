@@ -3,7 +3,7 @@
     {
       "name": "Arclet Copier",
       "description": "Quickly copy current page URL with parameter filtering and Markdown formatting support.",
-      "link": "https://github.com/rokcso/arclet-copier",
+      "link": "/arclet-copier",
       "icon": "🌈",
       "icon_img": "assets/img/arclet-copier-icon.png"
     },

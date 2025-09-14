@@ -5,6 +5,18 @@
       "destination": "/pages/privacy-policy.html"
     },
     {
+      "source": "/arclet-copier",
+      "destination": "/pages/arclet-copier/index.html"
+    },
+    {
+      "source": "/arclet-copier/privacy-policy",
+      "destination": "/pages/arclet-copier/privacy-policy.html"
+    },
+    {
+      "source": "/arclet-copier/help",
+      "destination": "/pages/arclet-copier/help.html"
+    },
+    {
       "source": "/",
       "destination": "/index.html"
     }

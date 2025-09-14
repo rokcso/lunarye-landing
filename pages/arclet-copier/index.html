@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Arclet Copier - Lunarye™ Studio</title>
+        <meta
+            name="description"
+            content="Arclet Copier - Smart URL copying Chrome extension with parameter filtering and Markdown formatting. Quickly copy URLs with tracking parameters removed."
+        />
+        <link rel="icon" type="image/svg+xml" href="../../favicon.svg" />
+        <link rel="stylesheet" href="../../assets/css/main.css" />
+    </head>
+
+    <body>
+        <div class="container">
+            <header>
+                <h1>Arclet Copier</h1>
+                <h2>Smart URL Copying Chrome Extension</h2>
+                <p>智能 URL 复制工具，支持参数过滤和 Markdown 格式化</p>
+            </header>
+
+            <div class="section">
+                <div class="section-title">Product Overview</div>
+                <p>
+                    Arclet Copier is a powerful Chrome extension designed to
+                    enhance your URL copying experience. It intelligently
+                    filters tracking parameters, supports multiple output
+                    formats, and provides seamless integration with your daily
+                    workflow.
+                </p>
+                <p>
+                    Whether you're a content creator, developer, researcher, or
+                    professional who frequently shares links, Arclet Copier
+                    streamlines your URL management with smart features and
+                    clean output.
+                </p>
+            </div>
+
+            <div class="section">
+                <div class="section-title">Key Features</div>
+
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🔗</div>
+                        <h3>One-Click Copy</h3>
+                        <p>
+                            Quickly copy current page URL with intelligent
+                            parameter filtering. Choose from three cleaning
+                            modes: Off, Smart (removes tracking parameters), or
+                            Aggressive (removes all parameters).
+                        </p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">📝</div>
+                        <h3>Markdown Formatting</h3>
+                        <p>
+                            Automatically generate Markdown links in
+                            <code>[title](url)</code> format with automatic page
+                            title extraction. Perfect for documentation, blogs,
+                            and technical writing.
+                        </p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">📱</div>
+                        <h3>QR Code Generation</h3>
+                        <p>
+                            Generate QR codes for any URL instantly. Share links
+                            quickly across devices or display them in
+                            presentations with clean, readable codes.
+                        </p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">⌨️</div>
+                        <h3>Keyboard Shortcuts</h3>
+                        <p>
+                            Use <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>C</kbd>
+                            (Windows/Linux) or
+                            <kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>C</kbd> (Mac)
+                            for silent copying without interrupting your
+                            workflow.
+                        </p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">🌙</div>
+                        <h3>Dark Mode Support</h3>
+                        <p>
+                            Full dark mode support with automatic theme
+                            switching. Choose between following system
+                            preferences, light mode, or dark mode for optimal
+                            viewing comfort.
+                        </p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">🌍</div>
+                        <h3>Bilingual Interface</h3>
+                        <p>
+                            Support for both English and Chinese (简体中文) with
+                            instant language switching. All interface elements
+                            are fully localized for global accessibility.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">URL Cleaning Modes</div>
+
+                <div class="mode-grid">
+                    <div class="mode-card">
+                        <h3>🔒 Off Mode</h3>
+                        <p>
+                            Keep the original URL unchanged. Perfect when you
+                            need to preserve all parameters for debugging or
+                            specific use cases.
+                        </p>
+                    </div>
+
+                    <div class="mode-card">
+                        <h3>🧠 Smart Mode</h3>
+                        <p>
+                            Intelligently remove tracking parameters (utm_*,
+                            fbclid, gclid, etc.) while keeping functional
+                            parameters. Ideal for clean sharing without losing
+                            functionality.
+                        </p>
+                    </div>
+
+                    <div class="mode-card">
+                        <h3>🧹 Aggressive Mode</h3>
+                        <p>
+                            Remove all URL parameters, leaving only the clean
+                            domain and path. Maximum privacy and minimal URL
+                            complexity for professional sharing.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">Technical Architecture</div>
+
+                <div class="tech-list">
+                    <div class="tech-item">
+                        <h4>📋 Modern Extension Standards</h4>
+                        <p>
+                            Built with Chrome Manifest V3 for enhanced security
+                            and performance. Uses Service Worker and Offscreen
+                            API for optimal resource management.
+                        </p>
+                    </div>
+
+                    <div class="tech-item">
+                        <h4>🔐 Privacy-First Design</h4>
+                        <p>
+                            Zero data collection. All settings stored locally.
+                            Minimal permissions required. No tracking, no
+                            analytics, just pure functionality.
+                        </p>
+                    </div>
+
+                    <div class="tech-item">
+                        <h4>⚡ Performance Optimized</h4>
+                        <p>
+                            Lightweight codebase with instant response times.
+                            Local processing means no network latency. Efficient
+                            resource usage across all usage scenarios.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">Use Cases</div>
+
+                <div class="use-case-grid">
+                    <div class="use-case-card">
+                        <h3>📝 Content Creators</h3>
+                        <p>
+                            Bloggers and writers can easily copy clean URLs with
+                            Markdown formatting for articles, social media
+                            posts, and documentation.
+                        </p>
+                    </div>
+
+                    <div class="use-case-card">
+                        <h3>👨‍💻 Developers</h3>
+                        <p>
+                            Quickly copy URLs for code comments, issue tracking,
+                            and documentation. Remove distracting parameters
+                            while maintaining link integrity.
+                        </p>
+                    </div>
+
+                    <div class="use-case-card">
+                        <h3>🔬 Researchers</h3>
+                        <p>
+                            Academic professionals can share clean, professional
+                            links for citations and references without marketing
+                            tracking parameters.
+                        </p>
+                    </div>
+
+                    <div class="use-case-card">
+                        <h3>👥 Product Managers</h3>
+                        <p>
+                            Share product links with teams and stakeholders
+                            without revealing tracking campaigns or marketing
+                            parameters.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">Version History</div>
+
+                <div class="version-list">
+                    <div class="version-item">
+                        <h4>v1.3.0 - Latest Release</h4>
+                        <p>
+                            📱 QR code generation feature<br />
+                            🌙 Complete dark mode support<br />
+                            🧠 Enhanced smart URL cleaning<br />
+                            🎧 Adaptive UI components<br />
+                            🎨 Improved user experience
+                        </p>
+                    </div>
+
+                    <div class="version-item">
+                        <h4>v1.2.0</h4>
+                        <p>
+                            🌍 Internationalization support<br />
+                            🎨 Interface redesign<br />
+                            ✨ Enhanced user experience
+                        </p>
+                    </div>
+
+                    <div class="version-item">
+                        <h4>v1.1.0</h4>
+                        <p>
+                            ⚪ Offscreen API implementation<br />
+                            🛡️ Enhanced stability<br />
+                            🔄 Improved compatibility
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">Get Arclet Copier</div>
+
+                <div class="download-section">
+                    <p>
+                        Arclet Copier is available for free on the Chrome Web
+                        Store. Install it today and transform your URL copying
+                        workflow.
+                    </p>
+
+                    <div class="download-buttons">
+                        <a
+                            href="https://chrome.google.com/webstore/detail/arclet-copier/[extension-id]"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="download-btn"
+                        >
+                            <span class="btn-icon">🌐</span>
+                            Install from Chrome Web Store
+                        </a>
+
+                        <a
+                            href="https://github.com/rokcso/arclet-copier"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="download-btn secondary"
+                        >
+                            <span class="btn-icon">📂</span>
+                            View Source Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">System Requirements</div>
+
+                <div class="requirements-grid">
+                    <div class="requirement-item">
+                        <h4>🌐 Browser</h4>
+                        <p>
+                            Google Chrome (version 88+)<br />
+                            Microsoft Edge (Chromium-based)
+                        </p>
+                    </div>
+
+                    <div class="requirement-item">
+                        <h4>💾 Storage</h4>
+                        <p>
+                            Less than 1MB disk space<br />
+                            Local settings storage only
+                        </p>
+                    </div>
+
+                    <div class="requirement-item">
+                        <h4>🔒 Permissions</h4>
+                        <p>
+                            Active tab access<br />
+                            Clipboard write<br />
+                            Local storage
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">Support & Resources</div>
+
+                <div class="support-section">
+                    <p>
+                        We continuously improve Arclet Copier based on user
+                        feedback. If you encounter any issues or have
+                        suggestions for new features, please don't hesitate to
+                        reach out.
+                    </p>
+
+                    <div class="support-links">
+                        <a href="/arclet-copier/help" rel="noopener noreferrer">
+                            📖 Documentation
+                        </a>
+                        <a
+                            href="/arclet-copier/privacy-policy"
+                            rel="noopener noreferrer"
+                        >
+                            🔒 Privacy Policy
+                        </a>
+                        <a
+                            href="https://github.com/rokcso/arclet-copier/issues"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            🐛 Report Issues
+                        </a>
+                        <a
+                            href="https://github.com/rokcso/arclet-copier/discussions"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            💬 Feature Requests
+                        </a>
+                        <a href="mailto:hi@rokcso.com"> 📧 Email Support </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer-links">
+                <a href="/">← Back to Lunarye™ Studio</a>
+            </div>
+            <p>
+                Copyright &copy; 2024-2025, Lunarye™ Studio. All rights
+                reserved.<br />
+                Arclet Copier v1.3.0 - Crafted with care for professionals who
+                value clean URLs.
+            </p>
+        </footer>
+        <script src="../../assets/js/main.js"></script>
+    </body>
+</html>
