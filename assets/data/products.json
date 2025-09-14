@@ -5,22 +5,19 @@
       "description": "Quickly copy current page URL with parameter filtering and Markdown formatting support.",
       "link": "https://github.com/rokcso/arclet-copier",
       "icon": "🌈",
-      "icon_img": "assets/img/arclet-copier-icon.png",
-      "type": "Chrome Extension"
+      "icon_img": "assets/img/arclet-copier-icon.png"
     },
     {
       "name": "Feishu Document Creator",
       "description": "Create Feishu/Lark online document quickly using native Feishu/Lark URLs.",
       "link": "https://www.raycast.com/rokcso/feishu-document-creator",
-      "icon": "🐦",
-      "type": "Raycast Extension"
+      "icon": "🐦"
     },
     {
       "name": "Hugo Bear Neo",
       "description": "A feature-rich Hugo theme ported from Hugo Bear Blog, originally based on ʕ•ᴥ•ʔ Bear Blog, offering upvote buttons, elegant TOC, and UX refinements.",
       "link": "https://github.com/rokcso/hugo-bearneo",
-      "icon": "🧸",
-      "type": "Hugo Theme"
+      "icon": "🧸"
     }
   ]
 }

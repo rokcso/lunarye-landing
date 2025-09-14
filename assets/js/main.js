@@ -38,15 +38,13 @@ function createProductCard(product) {
     iconHtml = product.icon || "📦"; // 默认图标
   }
 
-  const typeLabel = product.type_label || (product.type || "").toUpperCase();
-  const typeClass = product.type || "";
+  const isLongName = product.name.length > 20; // 长名称判断
 
   card.innerHTML = `
         <div class="product-header">
             <div class="product-icon">${iconHtml}</div>
-            <div class="product-title-wrapper">
-                <div class="product-name">${product.name}</div>
-                ${typeLabel ? `<div class="product-type ${typeClass}">${typeLabel}</div>` : ""}
+            <div class="product-content">
+                <h3 class="product-name ${isLongName ? "long-title" : ""}">${product.name}</h3>
             </div>
         </div>
         <div class="product-description">${product.description}</div>

@@ -122,23 +122,22 @@ footer {
 .product-header {
     display: flex;
     align-items: center;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
     text-align: left;
 }
 
-.product-title-wrapper {
-    display: flex;
-    align-items: center;
+.product-content {
     flex: 1;
+    min-width: 0;
 }
 
 .product-icon {
-    font-size: 1.8em;
-    margin-right: 12px;
+    font-size: 1.6em;
+    margin-right: 14px;
     flex-shrink: 0;
     filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
-    width: 32px;
-    height: 32px;
+    width: 36px;
+    height: 36px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -148,87 +147,35 @@ footer {
     width: 100%;
     height: 100%;
     object-fit: contain;
-    border-radius: 4px;
+    border-radius: 6px;
 }
 
 .product-name {
-    font-size: 1.3em;
+    font-size: 1.25em;
     font-weight: bold;
     color: var(--text-color);
-    margin: 0;
+    margin: 0 0 4px 0;
     text-align: left;
-    line-height: 1.2;
+    line-height: 1.3;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
-.product-type {
-    font-size: 0.75em;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    padding: 2px 8px;
-    border-radius: 12px;
-    margin-left: 12px;
-    white-space: nowrap;
-}
-
-/* 不同类型的标签样式 */
-.product-type.extension {
-    background-color: #e3f2fd;
-    color: #1976d2;
-}
-
-.product-type.app {
-    background-color: #f3e5f5;
-    color: #7b1fa2;
-}
-
-.product-type.tool {
-    background-color: #e8f5e8;
-    color: #388e3c;
-}
-
-.product-type.website {
-    background-color: #fff3e0;
-    color: #f57c00;
-}
-
-.product-type.platform {
-    background-color: #fce4ec;
-    color: #c2185b;
-}
-
-/* 深色模式下的类型标签样式 */
-@media (prefers-color-scheme: dark) {
-    .product-type.extension {
-        background-color: #1a237e;
-        color: #90caf9;
-    }
-
-    .product-type.app {
-        background-color: #4a148c;
-        color: #ce93d8;
-    }
-
-    .product-type.tool {
-        background-color: #1b5e20;
-        color: #a5d6a7;
-    }
-
-    .product-type.website {
-        background-color: #e65100;
-        color: #ffe0b2;
-    }
-
-    .product-type.platform {
-        background-color: #880e4f;
-        color: #f48fb1;
-    }
+.product-name.long-title {
+    font-size: 1.15em;
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0 0 6px 0;
 }
 
 .product-description {
     font-size: 0.95em;
     line-height: 1.5;
-    margin-bottom: 15px;
+    margin-bottom: 18px;
     color: var(--text-color);
 }
 
