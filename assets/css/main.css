@@ -25,15 +25,12 @@
     border: 1px solid var(--border-color);
     border-radius: 8px;
     padding: 20px;
-    transition: all 0.2s ease-in-out;
     background-color: var(--bg-color);
 }
 
 .principle-card:hover,
 .info-card:hover,
 .rights-card:hover {
-    box-shadow: 2px 2px 0px var(--border-color);
-    transform: translateY(-2px);
 }
 
 .principle-icon,
@@ -148,15 +145,12 @@
     border: 1px solid var(--border-color);
     border-radius: 8px;
     padding: 20px;
-    transition: all 0.2s ease-in-out;
     background-color: var(--bg-color);
 }
 
 .getting-started-card:hover,
 .feature-guide:hover,
 .mode-card:hover {
-    box-shadow: 2px 2px 0px var(--border-color);
-    transform: translateY(-2px);
 }
 
 .card-icon,
@@ -766,13 +760,10 @@ footer {
     border: 1px solid var(--border-color);
     border-radius: 8px;
     padding: 20px;
-    transition: all 0.2s ease-in-out;
     background-color: var(--bg-color);
 }
 
 .product-card:hover {
-    box-shadow: 2px 2px 0px var(--border-color);
-    transform: translateY(-2px);
 }
 
 .product-header {
@@ -870,15 +861,12 @@ footer {
     border: 1px solid var(--border-color);
     border-radius: 8px;
     padding: 20px;
-    transition: all 0.2s ease-in-out;
     background-color: var(--bg-color);
 }
 
 .feature-card:hover,
 .mode-card:hover,
 .use-case-card:hover {
-    box-shadow: 2px 2px 0px var(--border-color);
-    transform: translateY(-2px);
 }
 
 .feature-icon,
@@ -934,14 +922,12 @@ footer {
     border-radius: 6px;
     font-size: 1em;
     font-weight: bold;
-    transition: all 0.2s ease-in-out;
 }
 
 .download-btn:hover {
     color: var(--bg-color);
     background-color: var(--link-color);
     text-decoration: none;
-    transform: translateY(-2px);
 }
 
 .download-btn.secondary {
