@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Arclet Copier - 智能URL复制工具 - Lunarye™ Studio</title>
+        <meta
+            name="description"
+            content="Arclet Copier - 智能URL复制Chrome扩展，支持参数过滤和Markdown格式化。快速复制并去除跟踪参数的清洁URL。"
+        />
+        <link rel="icon" type="image/svg+xml" href="../../favicon.svg" />
+        <link rel="stylesheet" href="../../assets/css/main.css" />
+    </head>
+
+    <body>
+        <!-- Language Selector -->
+        <div class="lang-selector">
+            <a href="/arclet-copier">EN</a>
+            <span class="lang-separator">|</span>
+            <a href="/arclet-copier/zh" class="active">中文</a>
+        </div>
+
+        <div class="container">
+            <header>
+                <h1>Arclet Copier</h1>
+                <h2>智能URL复制工具</h2>
+                <p>支持参数过滤和Markdown格式化的Chrome扩展</p>
+            </header>
+
+            <div class="section">
+                <div class="section-title">产品概述</div>
+                <p>
+                    Arclet Copier是一款强大的Chrome扩展，旨在提升您的URL复制体验。
+                    它智能过滤跟踪参数，支持多种输出格式，并与您的日常工作流程无缝集成。
+                </p>
+                <p>
+                    无论您是内容创作者、开发者、研究人员还是经常分享链接的专业人士，
+                    Arclet Copier都能通过智能功能和清洁的输出简化您的URL管理。
+                </p>
+            </div>
+
+            <div class="section">
+                <div class="section-title">核心功能</div>
+
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🔗</div>
+                        <h3>一键复制</h3>
+                        <p>
+                            快速复制当前页面URL，配备智能参数过滤。
+                            可选择三种清理模式：关闭模式、智能模式（移除跟踪参数）或激进模式（移除所有参数）。
+                        </p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">📝</div>
+                        <h3>Markdown格式化</h3>
+                        <p>
+                            自动生成<code>[标题](URL)</code>格式的Markdown链接，
+                            自动提取页面标题。非常适合文档、博客和技术写作。
+                        </p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">📱</div>
+                        <h3>二维码生成</h3>
+                        <p>
+                            为任何URL即时生成二维码。在设备间快速分享链接，
+                            或在演示中展示清洁、可读的代码。
+                        </p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">⌨️</div>
+                        <h3>键盘快捷键</h3>
+                        <p>
+                            使用<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>C</kbd>
+                            (Windows/Linux)或<kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>C</kbd> (Mac)
+                            进行静默复制，不打扰您的工作流程。
+                        </p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">🌙</div>
+                        <h3>暗色模式支持</h3>
+                        <p>
+                            完整的暗色模式支持，自动主题切换。
+                            可选择跟随系统偏好、浅色模式或暗色模式以获得最佳观看舒适度。
+                        </p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">🌍</div>
+                        <h3>双语界面</h3>
+                        <p>
+                            支持英文和中文（简体中文）即时语言切换。
+                            所有界面元素都完全本地化，实现全球无障碍访问。
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">URL清理模式</div>
+
+                <div class="mode-grid">
+                    <div class="mode-card">
+                        <h3>🔒 关闭模式</h3>
+                        <p>
+                            保持原始URL不变。当您需要保留所有参数进行调试或特定用途时完美适用。
+                        </p>
+                    </div>
+
+                    <div class="mode-card">
+                        <h3>🧠 智能模式</h3>
+                        <p>
+                            智能移除跟踪参数（utm_*、fbclid、gclid等），同时保留功能参数。
+                            在不损失功能的情况下实现清洁分享的理想选择。
+                        </p>
+                    </div>
+
+                    <div class="mode-card">
+                        <h3>🧹 激进模式</h3>
+                        <p>
+                            移除所有URL参数，仅保留清洁的域名和路径。为专业分享提供最大隐私和最小URL复杂度。
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">技术架构</div>
+
+                <div class="tech-list">
+                    <div class="tech-item">
+                        <h4>📋 现代扩展标准</h4>
+                        <p>
+                            基于Chrome Manifest V3构建，增强安全性和性能。
+                            使用Service Worker和Offscreen API实现最佳资源管理。
+                        </p>
+                    </div>
+
+                    <div class="tech-item">
+                        <h4>🔐 隐私优先设计</h4>
+                        <p>
+                            零数据收集。所有设置本地存储。所需权限最小化。
+                            无跟踪、无分析，纯粹的功能性。
+                        </p>
+                    </div>
+
+                    <div class="tech-item">
+                        <h4>⚡ 性能优化</h4>
+                        <p>
+                            轻量级代码库，即时响应时间。本地处理意味着无网络延迟。
+                            在所有使用场景中实现高效资源利用。
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">使用场景</div>
+
+                <div class="use-case-grid">
+                    <div class="use-case-card">
+                        <h3>📝 内容创作者</h3>
+                        <p>
+                            博主和作家可以轻松复制带有Markdown格式的清洁URL，
+                            用于文章、社交媒体帖子和文档。
+                        </p>
+                    </div>
+
+                    <div class="use-case-card">
+                        <h3>👨‍💻 开发者</h3>
+                        <p>
+                            快速复制代码注释、问题跟踪和文档的URL。
+                            移除干扰参数，同时保持链接完整性。
+                        </p>
+                    </div>
+
+                    <div class="use-case-card">
+                        <h3>🔬 研究人员</h3>
+                        <p>
+                            学术专业人士可以分享干净、专业的链接用于引用和参考，
+                            没有营销跟踪参数。
+                        </p>
+                    </div>
+
+                    <div class="use-case-card">
+                        <h3>👥 产品经理</h3>
+                        <p>
+                            与团队和利益相关者分享产品链接，而不暴露跟踪活动或营销参数。
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">版本历史</div>
+
+                <div class="version-list">
+                    <div class="version-item">
+                        <h4>v1.3.0 - 最新版本</h4>
+                        <p>
+                            📱 二维码生成功能<br />
+                            🌙 完整暗色模式支持<br />
+                            🧠 增强智能URL清理<br />
+                            🎧 自适应UI组件<br />
+                            🎨 改进用户体验
+                        </p>
+                    </div>
+
+                    <div class="version-item">
+                        <h4>v1.2.0</h4>
+                        <p>
+                            🌍 国际化支持<br />
+                            🎨 界面重新设计<br />
+                            ✨ 增强用户体验
+                        </p>
+                    </div>
+
+                    <div class="version-item">
+                        <h4>v1.1.0</h4>
+                        <p>
+                            ⚪ Offscreen API实现<br />
+                            🛡️ 增强稳定性<br />
+                            🔄 改进兼容性
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">获取Arclet Copier</div>
+
+                <div class="download-section">
+                    <p>
+                        Arclet Copier在Chrome网上应用店免费提供。
+                        立即安装，改变您的URL复制工作流程。
+                    </p>
+
+                    <div class="download-buttons">
+                        <a
+                            href="https://chrome.google.com/webstore/detail/arclet-copier/[extension-id]"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="download-btn"
+                        >
+                            <span class="btn-icon">🌐</span>
+                            从Chrome网上应用店安装
+                        </a>
+
+                        <a
+                            href="https://github.com/rokcso/arclet-copier"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="download-btn secondary"
+                        >
+                            <span class="btn-icon">📂</span>
+                            查看源代码
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">系统要求</div>
+
+                <div class="requirements-grid">
+                    <div class="requirement-item">
+                        <h4>🌐 浏览器</h4>
+                        <p>
+                            Google Chrome (版本88+)<br />
+                            Microsoft Edge (基于Chromium)
+                        </p>
+                    </div>
+
+                    <div class="requirement-item">
+                        <h4>💾 存储</h4>
+                        <p>
+                            小于1MB磁盘空间<br />
+                            仅本地设置存储
+                        </p>
+                    </div>
+
+                    <div class="requirement-item">
+                        <h4>🔒 权限</h4>
+                        <p>
+                            活动标签页访问<br />
+                            剪贴板写入<br />
+                            本地存储
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">支持与资源</div>
+
+                <div class="support-section">
+                    <p>
+                        我们根据用户反馈不断改进Arclet Copier。
+                        如果您遇到任何问题或有新功能建议，请随时联系我们。
+                    </p>
+
+                    <div class="support-links">
+                        <a href="/arclet-copier/zh/help" rel="noopener noreferrer">
+                            📖 使用文档
+                        </a>
+                        <a
+                            href="/arclet-copier/zh/privacy-policy"
+                            rel="noopener noreferrer"
+                        >
+                            🔒 隐私政策
+                        </a>
+                        <a
+                            href="https://github.com/rokcso/arclet-copier/issues"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            🐛 报告问题
+                        </a>
+                        <a
+                            href="https://github.com/rokcso/arclet-copier/discussions"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            💬 功能请求
+                        </a>
+                        <a href="mailto:hi@rokcso.com"> 📧 邮件支持 </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer-links">
+                <a href="/">← 返回 Lunarye™ Studio</a>
+            </div>
+            <p>
+                Copyright &copy; 2024-2025, Lunarye™ Studio. All rights reserved.<br />
+                Arclet Copier v1.3.0 - 为重视清洁URL的专业人士精心打造。
+            </p>
+        </footer>
+        <script src="../../assets/js/main.js"></script>
+    </body>
+</html>

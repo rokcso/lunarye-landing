@@ -9,12 +9,24 @@
       "destination": "/pages/arclet-copier/index.html"
     },
     {
+      "source": "/arclet-copier/zh",
+      "destination": "/pages/arclet-copier/index.zh.html"
+    },
+    {
       "source": "/arclet-copier/privacy-policy",
       "destination": "/pages/arclet-copier/privacy-policy.html"
     },
     {
+      "source": "/arclet-copier/zh/privacy-policy",
+      "destination": "/pages/arclet-copier/privacy-policy.zh.html"
+    },
+    {
       "source": "/arclet-copier/help",
       "destination": "/pages/arclet-copier/help.html"
+    },
+    {
+      "source": "/arclet-copier/zh/help",
+      "destination": "/pages/arclet-copier/help.zh.html"
     },
     {
       "source": "/",
