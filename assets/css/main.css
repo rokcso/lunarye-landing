@@ -449,7 +449,7 @@
     position: absolute;
     top: 20px;
     right: 20px;
-    z-index: 100;
+    z-index: 10;
     display: flex;
     gap: 10px;
     align-items: center;
@@ -551,14 +551,14 @@
 /* Responsive adjustments for language selector */
 @media (max-width: 768px) {
     .lang-selector {
-        position: relative;
-        top: auto;
-        right: auto;
-        margin-top: 20px;
+        position: static;
+        margin-top: 0;
         margin-bottom: 20px;
         justify-content: center;
         width: 100%;
         box-sizing: border-box;
+        margin: 0 auto 20px auto;
+        transform: none;
     }
 
     .lang-nav {
@@ -659,6 +659,7 @@ body {
     box-shadow: 4px 4px 0px var(--border-color);
     background-color: var(--bg-color);
     margin-bottom: 20px;
+    position: relative;
 }
 
 header {
