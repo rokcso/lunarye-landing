@@ -38,10 +38,16 @@ function createProductCard(product) {
     iconHtml = product.icon || "📦"; // 默认图标
   }
 
+  const typeLabel = product.type_label || (product.type || "").toUpperCase();
+  const typeClass = product.type || "";
+
   card.innerHTML = `
         <div class="product-header">
             <div class="product-icon">${iconHtml}</div>
-            <div class="product-name">${product.name}</div>
+            <div class="product-title-wrapper">
+                <div class="product-name">${product.name}</div>
+                ${typeLabel ? `<div class="product-type ${typeClass}">${typeLabel}</div>` : ""}
+            </div>
         </div>
         <div class="product-description">${product.description}</div>
         <div class="product-link">

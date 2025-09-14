@@ -5,25 +5,22 @@
       "description": "Quickly copy current page URL with parameter filtering and Markdown formatting support.",
       "link": "https://github.com/rokcso/arclet-copier",
       "icon": "🌈",
-      "icon_img": "assets/img/arclet-copier-icon.png"
+      "icon_img": "assets/img/arclet-copier-icon.png",
+      "type": "Chrome Extension"
     },
     {
-      "name": "MoonScript",
-      "description": "A lightweight markup language that transforms text into beautiful documents, perfect for writers and developers alike.",
-      "link": "#",
-      "icon": "📝"
+      "name": "Feishu Document Creator",
+      "description": "Create Feishu/Lark online document quickly using native Feishu/Lark URLs.",
+      "link": "https://www.raycast.com/rokcso/feishu-document-creator",
+      "icon": "🐦",
+      "type": "Raycast Extension"
     },
     {
-      "name": "Stellar",
-      "description": "An elegant design system that brings cosmic harmony to your digital products with carefully crafted components.",
-      "link": "#",
-      "icon": "⭐"
-    },
-    {
-      "name": "Eclipse",
-      "description": "A privacy-focused analytics platform that provides clear insights without compromising user data or experience.",
-      "link": "#",
-      "icon": ""
+      "name": "Hugo Bear Neo",
+      "description": "A feature-rich Hugo theme ported from Hugo Bear Blog, originally based on ʕ•ᴥ•ʔ Bear Blog, offering upvote buttons, elegant TOC, and UX refinements.",
+      "link": "https://github.com/rokcso/hugo-bearneo",
+      "icon": "🧸",
+      "type": "Hugo Theme"
     }
   ]
 }

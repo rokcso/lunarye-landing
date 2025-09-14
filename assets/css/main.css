@@ -126,6 +126,12 @@ footer {
     text-align: left;
 }
 
+.product-title-wrapper {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
 .product-icon {
     font-size: 1.8em;
     margin-right: 12px;
@@ -152,6 +158,71 @@ footer {
     margin: 0;
     text-align: left;
     line-height: 1.2;
+}
+
+.product-type {
+    font-size: 0.75em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 2px 8px;
+    border-radius: 12px;
+    margin-left: 12px;
+    white-space: nowrap;
+}
+
+/* 不同类型的标签样式 */
+.product-type.extension {
+    background-color: #e3f2fd;
+    color: #1976d2;
+}
+
+.product-type.app {
+    background-color: #f3e5f5;
+    color: #7b1fa2;
+}
+
+.product-type.tool {
+    background-color: #e8f5e8;
+    color: #388e3c;
+}
+
+.product-type.website {
+    background-color: #fff3e0;
+    color: #f57c00;
+}
+
+.product-type.platform {
+    background-color: #fce4ec;
+    color: #c2185b;
+}
+
+/* 深色模式下的类型标签样式 */
+@media (prefers-color-scheme: dark) {
+    .product-type.extension {
+        background-color: #1a237e;
+        color: #90caf9;
+    }
+
+    .product-type.app {
+        background-color: #4a148c;
+        color: #ce93d8;
+    }
+
+    .product-type.tool {
+        background-color: #1b5e20;
+        color: #a5d6a7;
+    }
+
+    .product-type.website {
+        background-color: #e65100;
+        color: #ffe0b2;
+    }
+
+    .product-type.platform {
+        background-color: #880e4f;
+        color: #f48fb1;
+    }
 }
 
 .product-description {
