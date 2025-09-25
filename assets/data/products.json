@@ -3,7 +3,7 @@
     {
       "name": "Arclet Copier",
       "description": "A Chrome Extension. Quickly copy current page URL with parameter filtering and Markdown formatting support.",
-      "link": "/arclet-copier",
+      "link": "https://arcletcopier.com/",
       "icon": "🌈",
       "icon_img": "assets/img/arclet-copier-icon.png"
     },
